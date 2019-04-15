@@ -19,7 +19,8 @@
 	<main class="site-main section-inner animated fadeIn faster">
 		<article class="thin">
 			<header class="post-header">
-				<div class="post-meta"><span>{{ .Date.Format .Site.Params.dateform }}</span></div>
+				<div class="post-meta"><span>Published: {{ .Date.Format .Site.Params.dateform }}</span></div>
+				<div class="post-meta"><span>Last update: {{ .Lastmod.Format "Jan 2, 2006" }}</span></div>
 				<div class="post-meta"><span>Reading time: {{ .ReadingTime }} minutes</span></div>
 				<h1>{{ .Title }}</h1>
 			</header>
